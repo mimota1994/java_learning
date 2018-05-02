@@ -2,6 +2,18 @@ package property;
 
 public class Item {
 	
+	private Item(){
+		
+	}
+	
+	static Item jingkela ;
+	
+	static Item getItem(){
+		if(null==jingkela)
+			jingkela=new Item();
+		return jingkela;
+	}
+	
 	String name;
 	int price;
 
