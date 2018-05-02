@@ -1,8 +1,7 @@
 package charactor;
 
-public class ADHero extends Hero{
-	public ADHero(String name, float hp) {
-		super(name, hp);
+public class ADHero extends Hero implements AD{
+	public ADHero(){
 		// TODO Auto-generated constructor stub
 	}
 	public void attack(){

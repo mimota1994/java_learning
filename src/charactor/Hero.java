@@ -15,15 +15,10 @@ public class Hero {
 	String killwword;
 	String bekilledword;
 	
-	private Hero(){
+	protected Hero(){
 	}
 	
-	static Hero mimota =new Hero();
 	
-	
-	static Hero getHero(){
-		return mimota;
-	}
 	
 	void keng(){
 		System.out.println("坑队友！！！");
