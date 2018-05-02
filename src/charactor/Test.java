@@ -1,6 +1,5 @@
 package charactor;
 
-import java.io.ObjectInputStream.GetField;
 
 public class Test {
 
@@ -9,7 +8,12 @@ public class Test {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		GiantDragon dragon=GiantDragon.getDragon();
+		
+		Hero mimota=Hero.getHero();
+		mimota.armor=(float) 1.0;
+		Hero mimota1=Hero.getHero();
+		System.out.println(mimota1.armor);
+		
 	}
 
 }

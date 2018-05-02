@@ -15,17 +15,15 @@ public class Hero {
 	String killwword;
 	String bekilledword;
 	
-	public Hero(String name,float hp){
-		this.name=name;
-		this.hp=hp;
+	private Hero(){
 	}
 	
-	public Hero(String name,float hp,float armor,int moveSpeed){	
-		this(name,hp);
-		this.armor=armor;
-		this.moveSpeed=moveSpeed;
-	}
+	static Hero mimota =new Hero();
 	
+	
+	static Hero getHero(){
+		return mimota;
+	}
 	
 	void keng(){
 		System.out.println("坑队友！！！");
@@ -53,11 +51,6 @@ public class Hero {
 	
 	
 	public static void main(String[] args) {
-		Hero garen=new Hero("盖伦",616.28f,27.536f,350);
-
-		
-		
-		Hero teemo=new Hero("提莫",383f,14f,330);
 
 	}
 
