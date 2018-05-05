@@ -22,4 +22,10 @@ public class Armor extends Item{
 
 	}
 
+	@Override
+	public boolean disposable() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

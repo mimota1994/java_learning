@@ -1,6 +1,6 @@
 package property;
 
-public class Item {
+public abstract class Item {
 	
 	
 	
@@ -23,6 +23,8 @@ public class Item {
 		return false;
 	}
 	
+	public abstract boolean disposable();
+	
 	
 
 	/**
@@ -39,11 +41,12 @@ public class Item {
 ////			System.out.println(Bloodbottle.toString());
 //		}
 //		
-		Item Bloodbottle=new Item();
+		Item Bloodbottle=new Weapon();
 		Bloodbottle.name="血瓶";
 		Bloodbottle.price=50;
+		System.out.println(Bloodbottle.disposable());
 	
-		Item Blood=new Item();
+		Item Blood=new Armor();
 		Blood.name="血";
 		Blood.price=50;
 		
