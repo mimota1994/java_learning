@@ -1,6 +1,6 @@
 package charactor;
 
-public class ADHero extends Hero implements AD{
+public class ADHero extends Hero implements Mortal{
 	public ADHero(){
 		// TODO Auto-generated constructor stub
 	}
@@ -16,26 +16,17 @@ public class ADHero extends Hero implements AD{
 		
 	}
 	
+	public void die(){
+		System.out.println("物理攻击英雄死了");
+	}
+	
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ADHero bh=new ADHero("赏金猎人",1111f);
 		
-		Hero garen=new Hero("盖伦",616.28f);
-		
-		garen.armor=27.536f;
-		garen.moveSpeed=350;
-		garen.addSpeed(100);
-		
-		
-		Hero teemo=new Hero("提莫",383f);
-		teemo.armor=14f;
-		teemo.moveSpeed=330;
-		
-		bh.attack(garen,teemo);
 
 	}
 

@@ -18,7 +18,10 @@ public class Hero {
 	protected Hero(){
 	}
 	
-	
+	public void kill(Mortal...mortals) {
+		for(int i=0;i<mortals.length;i++)
+			mortals[i].die();
+	}
 	
 	void keng(){
 		System.out.println("坑队友！！！");
@@ -45,8 +48,15 @@ public class Hero {
 	}
 	
 	
+	
+	
 	public static void main(String[] args) {
-
+		Hero garen=new Hero();
+		ADAPHero h1=new ADAPHero();
+		ADHero h2=new ADHero();
+		APHero h3=new APHero();
+		garen.kill(h1,h2,h3);
+		
 	}
 
 }
