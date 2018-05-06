@@ -41,16 +41,25 @@ public abstract class Item {
 ////			System.out.println(Bloodbottle.toString());
 //		}
 //		
-		Item Bloodbottle=new Weapon();
-		Bloodbottle.name="血瓶";
-		Bloodbottle.price=50;
-		System.out.println(Bloodbottle.disposable());
-	
-		Item Blood=new Armor();
-		Blood.name="血";
-		Blood.price=50;
+//		Item Bloodbottle=new Weapon();
+//		Bloodbottle.name="血瓶";
+//		Bloodbottle.price=50;
+//		System.out.println(Bloodbottle.disposable());
+//	
+//		Item Blood=new Armor();
+//		Blood.name="血";
+//		Blood.price=50;
 		
-		System.out.println(Bloodbottle.equals(Blood));
+		Item cup = new Item() {
+			
+			@Override
+			public boolean disposable() {
+				// TODO Auto-generated method stub
+				return false;
+			}
+		};
+		System.out.println(cup.disposable());
+		
 		
 		
 
